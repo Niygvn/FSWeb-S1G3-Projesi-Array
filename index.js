@@ -57,9 +57,14 @@ Bir dizinin tam olarak 25 çeşit olduğunu onaylayın. İşleviniz şunları ka
 */
 
 
-function dizi25Cesitmi(/*kod buraya*/){
-  /*kod buraya*/
+function dizi25Cesitmi(dizi){
+if ( dizi.lenght = 25 ){
+  return true
+} else {
+  return false
 }
+}
+console.log(dizi25Cesitmi(dizi));
 
 
 /* Görev 3:
