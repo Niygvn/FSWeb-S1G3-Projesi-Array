@@ -79,10 +79,13 @@ Aşağıdakileri yapmak için cesitEkle işlevini kullanın:
   Örneğin: cesitEkle(orijinalTatlar, "Kakule") işlevi doğru çalıştığında ["Kakule", "Muz",..."Vanilya"] şeklinde dönmelidir
 */
 
-
-function cesitEkle(/*kod buraya*/){
-  /*kod buraya*/
+let yenitat = 'Kakule'
+function cesitEkle(orijinalTatlar,yenitat){
+  return (orijinalTatlar.unshift(yenitat));
 }
+console.log(cesitEkle(orijinalTatlar,yenitat));
+console.log(orijinalTatlar);
+
 
 
 /* Cörev 4:
@@ -98,9 +101,7 @@ Aşağıdakileri yapmak için sonCesitiKaldir işlevini kullanın:
 */
 
 
-function sonCesitiKaldir(/*kod buraya*/){
-  /*kod buraya*/
-}
+
 
 
 /* Görev 5:
