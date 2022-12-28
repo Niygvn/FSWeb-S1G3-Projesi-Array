@@ -39,10 +39,11 @@ Aşağıdakileri yapmak için aşağıdaki kopyalama işlevini kullanın:
    2. Alınan dizinin bir kopyasını döndür
 */
 
-
-function kopyala(/*kod buraya*/){
-  /*kod buraya*/
+let dizi = []
+function kopyala(dizi){
+return (dizi = orijinalTatlar)
 }
+console.log(kopyala(dizi));
 
 
 /* Görev 2:
