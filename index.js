@@ -80,11 +80,11 @@ Aşağıdakileri yapmak için cesitEkle işlevini kullanın:
 */
 
 let yenitat = 'Kakule'
-function cesitEkle(orijinalTatlar,yenitat){
-  return (orijinalTatlar.unshift(yenitat));
+function cesitEkle(dizi,yenitat){
+  return (dizi.unshift(yenitat));
 }
-console.log(cesitEkle(orijinalTatlar,yenitat));
-console.log(orijinalTatlar);
+console.log(cesitEkle(dizi,yenitat));
+console.log(dizi);
 
 
 
@@ -99,7 +99,9 @@ Aşağıdakileri yapmak için sonCesitiKaldir işlevini kullanın:
 
    Örneğin: sonCesitiKaldir(orijinalTatlar) çalıştırıldığında ["Kakule", "Muz",..."Çilek"] döndürülür.
 */
+function sonCesitiKaldir(){
 
+}
 
 
 
