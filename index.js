@@ -39,11 +39,12 @@ Aşağıdakileri yapmak için aşağıdaki kopyalama işlevini kullanın:
    2. Alınan dizinin bir kopyasını döndür
 */
 
-let dizi = []
+
 function kopyala(dizi){
-return (dizi = orijinalTatlar)
+  let yeniDizi = [...dizi];
+return (yeniDizi);
 }
-console.log(kopyala(dizi));
+console.log(kopyala(orijinalTatlar));
 
 
 /* Görev 2:
@@ -58,13 +59,13 @@ Bir dizinin tam olarak 25 çeşit olduğunu onaylayın. İşleviniz şunları ka
 
 
 function dizi25Cesitmi(dizi){
-if ( dizi.lenght = 25 ){
+if ( dizi.length == 25 ){
   return true
 } else {
   return false
 }
 }
-console.log(dizi25Cesitmi(dizi));
+console.log(dizi25Cesitmi(orijinalTatlar));
 
 
 /* Görev 3:
@@ -79,12 +80,12 @@ Aşağıdakileri yapmak için cesitEkle işlevini kullanın:
   Örneğin: cesitEkle(orijinalTatlar, "Kakule") işlevi doğru çalıştığında ["Kakule", "Muz",..."Vanilya"] şeklinde dönmelidir
 */
 
-let yenitat = 'Kakule'
+
 function cesitEkle(dizi,yenitat){
   return (dizi.unshift(yenitat));
 }
-console.log(cesitEkle(dizi,yenitat));
-console.log(dizi);
+console.log(cesitEkle(orijinalTatlar,'Kakule'));
+console.log(orijinalTatlar);
 
 
 
@@ -99,10 +100,12 @@ Aşağıdakileri yapmak için sonCesitiKaldir işlevini kullanın:
 
    Örneğin: sonCesitiKaldir(orijinalTatlar) çalıştırıldığında ["Kakule", "Muz",..."Çilek"] döndürülür.
 */
-function sonCesitiKaldir(){
-
+function sonCesitiKaldir(dizi){
+  dizi.pop();
+return dizi;
 }
-
+console.clear();
+console.log(sonCesitiKaldir(orijinalTatlar));
 
 
 
@@ -117,10 +120,10 @@ Aşağıdakileri yapmak için aşağıdaki indekstekiCesitiGetir işlevini kulla
    Örneğin: indekstekiCesitiGetir(orijinalTatlar, 2) çalıştırılmasıyla, Kakule'in başarıyla eklendiği varsayarsak sonuç "Ceviz" olucaktır.
 */
 
-function indekstekiCesitiGetir(/*kod buraya*/){
-  /*kod buraya*/
+function indekstekiCesitiGetir(dizi, sayı){
+return dizi[sayı];
 }
-
+console.log(indekstekiCesitiGetir(orijinalTatlar, 2));
 
 /* Görev 6:
 
@@ -136,10 +139,12 @@ Aşağıdakileri yapmak için ismeGoreCesitCikar işlevini kullanın:
 
   İPUCU: Bunun için .splice() kullanabilirsiniz.
 */
-
-function ismeGoreCesitCikar(/*kod buraya*/){
-  /*kod buraya*/
+console.clear();
+function ismeGoreCesitCikar(tatlar,aroma){
+  tatlar.splice(tatlar.indexOf(aroma),1,aroma);
+  return tatlar;
 }
+console.log(ismeGoreCesitCikar(orijinalTatlar, "Tarçın"));
 
 
 /* Görev 7:
