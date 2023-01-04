@@ -219,9 +219,25 @@ Aşağıdakileri yapmak için rastgeleTatlar işlevini ve yeni dizileri kullanı
 console.clear();
 
 function rastgeleTatlar(dizi1,dizi2,dizi3,dizi4){
-  let rast = [];
+  let topluTatlar = dizi1.concat(dizi2,dizi3,dizi4);
+  console.log(topluTatlar);
+  let rastgeleTatlar = [];
+   
+  while(rastgeleTatlar.length < 25){
+    
+    let rastgeleSecim = Math.floor(Math.random()* topluTatlar.length);
+    let eklenecekTat = topluTatlar[rastgeleSecim];
+    if(!rastgeleTatlar.includes(eklenecekTat)){
+      rastgeleTatlar.push(eklenecekTat);
+    }
+  
+  }
+  
+  return rastgeleTatlar;
   
 }
+
+
 
 // NEW DATA ARRAYS FOR STRETCH 2 ⬇️
 const yeniTatlar = [
@@ -260,7 +276,7 @@ const mevsimlikTatlar = [
 "Peynir",
 "Karamel"
 ]
-
+console.log(rastgeleTatlar(orijinalTatlar,yeniTatlar,mevsimlikTatlar,bolgeselTatlar));
 
 /* Lütfen bu satırın altındaki hiçbir şeyi değiştirmeyin */
 function sa(){
